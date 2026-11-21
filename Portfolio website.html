@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudra | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: #0f1117;
+      color: #e6e8ee;
+      line-height: 1.6;
+    }
+
+    a { color: #7c9cff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+
+    /* Top section */
+    header { padding: 100px 0 60px; }
+    header h1 { font-size: 2.8rem; line-height: 1.2; }
+    header h1 span { color: #7c9cff; }
+    header p { margin-top: 16px; font-size: 1.15rem; color: #a8adbd; max-width: 560px; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 12px 24px;
+      background: #7c9cff;
+      color: #0f1117;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .btn:hover { text-decoration: none; background: #9bb3ff; }
+
+    /* Sections */
+    section { padding: 50px 0; border-top: 1px solid #222634; }
+    section h2 { font-size: 1.6rem; margin-bottom: 20px; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .skills span {
+      background: #1a1e2b;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #c5cae0;
+    }
+
+    /* Project cards */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+    .card {
+      background: #1a1e2b;
+      padding: 22px;
+      border-radius: 12px;
+      border: 1px solid #262b3d;
+    }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #a8adbd; font-size: 0.95rem; }
+    .tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      background: #262b3d;
+      color: #c5cae0;
+    }
+
+    footer { padding: 40px 0; text-align: center; color: #6b7189; font-size: 0.9rem; }
+
+    @media (max-width: 500px) {
+      header { padding: 60px 0 40px; }
+      header h1 { font-size: 2.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Hi, I'm <span>Rudra</span></h1>
+      <p>I'm just getting started with building apps and tools using AI. This site is my first project, and I'm documenting everything I learn on GitHub.</p>
+      <a class="btn" href="#projects">See what I'm working on</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About me</h2>
+      <p>I'm from Ahmedabad, India, and I'm just starting out in building things with AI. I'm learning step by step and sharing the process on GitHub as I go.</p>
+      <div class="skills">
+        <span>HTML (beginner)</span>
+        <span>CSS (beginner)</span>
+        <span>JavaScript (learning)</span>
+        <span>Python (learning)</span>
+        <span>Git &amp; GitHub</span>
+        <span>AI tools</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>What I'm building</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>This page: my first project, built and published with GitHub Pages.</p>
+          <span class="tag">Just finished</span>
+        </div>
+        <div class="card">
+          <h3>YouTube Notes Maker</h3>
+          <p>An idea I'm learning to build: paste a YouTube link, get organized study notes from AI.</p>
+          <span class="tag">Up next</span>
+        </div>
+        <div class="card">
+          <h3>WhatsApp Chatbot</h3>
+          <p>A goal for later: a chatbot that answers customer questions for small businesses.</p>
+          <span class="tag">Planned</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Want to work together or just say hi?</p>
+      <p style="margin-top: 10px;">
+        Email: <a href="mailto:rudrabhojak783@gmail.com">rudrabhojak783@gmail.com</a><br>
+        GitHub: <a href="https://github.com/Rudra-Da-Goat">github.com/Rudra-Da-Goat</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">&copy; 2026 Rudra</div>
+  </footer>
+
+</body>
+</html>
